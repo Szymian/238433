@@ -1,0 +1,107 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="horizontal"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="134dp"
+        android:layout_height="131dp"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="40dp"
+
+        android:text="BMI v2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:textSize="35sp"
+        android:typeface="serif" />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="authorButtonOnClick"
+        android:text="o mnie" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="masa"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        tools:ignore="DuplicateIds" />
+
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:fadingEdgeLength="10dp"
+
+        android:hint="kg/funty"
+        android:inputType="numberDecimal"
+        android:textAlignment="center">
+
+        <requestFocus />
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="wzrost"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        tools:ignore="DuplicateIds" />
+
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="cm/cale"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"></EditText>
+
+
+    <Button
+        android:id="@+id/ib1"
+        android:layout_width="158dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fadingEdge="vertical"
+        android:longClickable="true"
+
+        android:onClick="calculateBMIButtonOnClick"
+        android:text="Lets do it!"
+        android:visibility="visible" />
+
+    <Switch
+        android:id="@+id/switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="normalne/nienormalne ;)" />
+
+</LinearLayout>
+
+
